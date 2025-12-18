@@ -30,7 +30,7 @@ function Cart() {
                 <button className="qty-btn" onClick={() => updateQuantity(item._id, (item.quantity || 1) + 1)}>+</button>
               </div>
               <p className="item-total">Total: ₹{(() => {
-                const priceStr = item.price.replace('₹', '').replace(/,/g, '');
+                const priceStr = item.price.replace('₹', '').replace('$', '').replace(/,/g, '');
                 const price = parseFloat(priceStr) || 0;
                 return (price * (item.quantity || 1)).toLocaleString('en-IN');
               })()}</p>

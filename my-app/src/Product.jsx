@@ -5,15 +5,8 @@ import './Product.css';
 function Product() {
   const { addToCart } = useCart();
   const products = [
-    { id: 1, name: "Elegant Dress", price: "₹7,400", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpYFpAvXyPpAkly7_2e_fG06Os1aTz6rVglw&s" },
-    { id: 2, name: "Casual Outfit", price: "₹5,400", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLEo-AtmOcBUWzUP-LEtAR78PvDfIoloOYxw&s" },
-    { id: 3, name: "Summer Dress", price: "₹6,200", image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=300&h=400&fit=crop" },
-    { id: 4, name: "Party Wear", price: "₹9,900", image: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=300&h=400&fit=crop" },
-    { id: 5, name: "Office Attire", price: "₹7,900", image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=300&h=400&fit=crop" },
-    { id: 6, name: "Evening Gown", price: "$150", image: "https://images.unsplash.com/photo-1566479179817-c0ae2b4a4b7e?w=300&h=400&fit=crop" },
-    { id: 7, name: "Casual Chic", price: "$80", image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=300&h=400&fit=crop" },
-    { id: 8, name: "Designer Wear", price: "$200", image: "https://i.pinimg.com/736x/c9/af/3b/c9af3b6baacda1ac0f9601b6f82fbaf7.jpg" },
-    { id: 11, name: "Vintage Style", price: "$85", image: "https://heartmycloset.me/cdn/shop/files/IMG_9543.jpg?v=1695927407" },
+    { id: 1, name: "Designer Wear", price: "$200", image: "https://i.pinimg.com/736x/c9/af/3b/c9af3b6baacda1ac0f9601b6f82fbaf7.jpg" },
+    { id: 2, name: "Vintage Style", price: "$85", image: "https://heartmycloset.me/cdn/shop/files/IMG_9543.jpg?v=1695927407" },
     { id: 12, name: "Modern Chic", price: "$90", image: "https://img.freepik.com/free-photo/young-business-woman-casual-outfit-by-business-center_1303-20481.jpg?semt=ais_hybrid&w=740&q=80" },
     { id: 13, name: "Boho Dress", price: "$78", image: "https://assets.myntassets.com/dpr_1.5,q_30,w_400,c_limit,fl_progressive/assets/images/2024/AUGUST/13/xbT93mtg_238ec6c07791420f9ca7d678181a1ee0.jpg" },
     { id: 14, name: "Cocktail Dress", price: "$135", image: "https://cdn-appdata.seasonsindia.com/uploads/feature_images/331-86201.jpg" },

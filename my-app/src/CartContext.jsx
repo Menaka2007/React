@@ -59,7 +59,7 @@ export const CartProvider = ({ children }) => {
 
   const getTotal = () => {
     const total = cartItems.reduce((sum, item) => {
-      const priceStr = item.price.replace('₹', '').replace(/,/g, '');
+      let priceStr = item.price.replace('₹', '').replace('$', '').replace(/,/g, '');
       const price = parseFloat(priceStr) || 0;
       return sum + (price * (item.quantity || 1));
     }, 0);
