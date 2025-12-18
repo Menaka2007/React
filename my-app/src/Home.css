@@ -1,0 +1,115 @@
+.home {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 50%, #fecfef 100%);
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+              linear-gradient(135deg, #ff6b9d 0%, #c44569 100%);
+  background-size: cover;
+  color: white;
+  margin-top: 80px;
+  padding: 0;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 25px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  text-align: center;
+  line-height: 1.4;
+  max-width: 600px;
+}
+
+.cta-btn {
+  background: #ff6b9d;
+  color: white;
+  border: none;
+  padding: 20px 40px;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.cta-btn:hover {
+  background: #c44569;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 60px 40px;
+  background: rgba(255,255,255,0.9);
+  width: 100%;
+  margin: 0;
+}
+
+.category {
+  text-align: center;
+  padding: 40px 30px;
+  background: white;
+  border-radius: 20px;
+  flex: 1;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.category:hover {
+  transform: translateY(-10px);
+}
+
+.category h3 {
+  color: #c44569;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.category p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .categories {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+}
